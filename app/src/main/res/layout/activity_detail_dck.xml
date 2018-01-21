@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topHeight_size"
+        android:background="@color/orangered"
+        >
+
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_width="@dimen/default_icon_size"
+            android:layout_height="@dimen/default_icon_size"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/go_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="待查勘"
+            android:textColor="@color/white"
+            android:textSize="16dip"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="@integer/weight1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="报案号："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/dck_detail_caseNo"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="PDAZ00000000000000"
+            android:textColor="@color/maintext"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="报案时间："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/dck_detail_caseTime"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="2017-07-25 10:22:45"
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="出险时间："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/dck_detail_outTime"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="2017-07-25 10:22:45"
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="出险次数："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/dck_detail_outNumber"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="2次"
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="报案人："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/dck_detail_reporter"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="报案电话："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/dck_detail_reporterPhone"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="13554219576"
+            android:textColor="@color/tel_blue"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="定损联系人："
+            android:textSize="@dimen/detail_size"/>
+
+        <TextView
+            android:id="@+id/ds_people"
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="13554219576"
+            android:textColor="@color/tel_blue"
+            android:textSize="@dimen/detail_size"
+
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="车牌号："
+            android:textSize="@dimen/detail_size"
+            />
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/dck_detail_licenseno"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="赣A100000"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                />
+
+            <Button
+                android:id="@+id/cbrs_btn"
+                android:layout_width="@dimen/wdetail_button"
+                android:layout_height="@dimen/hdetail_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_roundbig_yellow"
+                android:text="催办人伤"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_size"
+                />
+
+            <Button
+                android:id="@+id/go_detail"
+                android:layout_width="@dimen/wdetail_button"
+                android:layout_height="@dimen/hdetail_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/button_roundbig_red"
+                android:text="详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_size"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="风险上报状态："
+            android:textSize="@dimen/detail_size"
+            />
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/dck_detail_riskstate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="未上报"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                />
+
+            <Button
+                android:id="@+id/safe_book"
+                android:layout_width="@dimen/wdetail_button"
+                android:layout_height="@dimen/hdetail_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_roundbig_red"
+                android:text="风险上报"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_size"
+                />
+
+            <Button
+                android:id="@+id/dsafe_book"
+                android:layout_width="@dimen/wdetail_button"
+                android:layout_height="@dimen/hdetail_button"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_roundbig_red"
+                android:text="+"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:text="标的车牌号："
+            android:textSize="@dimen/detail_size"
+            />
+
+        <TextView
+            android:id="@+id/bd_num"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="赣A100000"
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:text="车辆品牌："
+            android:textSize="@dimen/detail_size"
+            />
+
+        <TextView
+            android:id="@+id/case_brand"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="奥迪"
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="风险类型："
+            android:textSize="@dimen/detail_size"
+            />
+
+        <LinearLayout
+            android:id="@+id/dck_risktype_wrapper"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="风险类型1"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="风险类型2"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/list_height"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="风险类型3"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="风险上报流程追踪："
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#a9a9a9"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="3"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="上报时间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detail_size"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="2"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="审核状态"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detail_size"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detail_size"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dck_risklist_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            >
+            <ListView
+                android:id="@+id/dck_detail_risklist"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:visibility="gone"
+        >
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="2017-07-25 10:22:45"
+            android:textColor="@color/maintext"
+            android:textSize="@dimen/detail_size"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="审核中"
+            android:textColor="@color/check_yellow"
+            android:textSize="@dimen/detail_size"
+            />
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="@dimen/list_height"
+            android:layout_weight="1"
+            android:gravity="center|center_horizontal|center_vertical"
+            >
+        <TextView
+            android:layout_width="60dip"
+            android:layout_height="26dip"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="详情"
+            android:textColor="@color/white"
+            android:background="@drawable/button_roundbig_red"
+            android:textSize="@dimen/detail_size"
+            />
+        </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="2017-07-25 10:22:45"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="审核通过"
+                android:textColor="@color/check_green"
+                android:textSize="@dimen/detail_size"
+                />
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                >
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="26dip"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="详情"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_roundbig_red"
+                    android:textSize="@dimen/detail_size"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="2017-07-25 10:22:45"
+                android:textColor="@color/maintext"
+                android:textSize="@dimen/detail_size"
+                />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="驳回"
+                android:textColor="@color/check_red"
+                android:textSize="@dimen/detail_size"
+                />
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="@dimen/list_height"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                >
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="26dip"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="详情"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_roundbig_red"
+                    android:textSize="@dimen/detail_size"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

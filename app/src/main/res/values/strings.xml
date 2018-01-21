@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">江西流控</string>
+    <string name="current_task_tab">"当前任务"</string>
+    <string name="his_task_tab">"历史任务"</string>
+    <string name="address_tab">"通讯录"</string>
+    <string name="message_tab">"消息"</string>
+    <string name="tab_survey_wait">"待查勘"</string>
+    <string name="tab_survey_finish">"已查勘"</string>
+    <string name="tab_check_wait">"待定损"</string>
+    <string name="tab_check_going">"定损中"</string>
+    <string name="tab_check_finish">"已定损"</string>
+    <string name="tab_get_ticket">"获票"</string>
+    <string name="tab_all">"全部"</string>
+    <string name="tab_rswork">"工作列表"</string>
+    <string name="tab_rshistroy">"历史列表"</string>
+    <string name="safeType1">"①出险后超两天以上未及时报案案件（报案时间-出险时间>2天）；"</string>
+    <string name="safeType2">"②出险时间临近保单起讫时间10天以内的案件（保单起讫时间-出险时间(10天)；"</string>
+    <string name="safeType3">"③加保险种出险的案件；"</string>
+    <string name="safeType4">"④出险时间为夜间12点以后的事故；"</string>
+    <string name="safeType5">"⑤高端车型（承保车损保额在20万元以上或估损金额在5万以上的事故）；"</string>
+    <string name="safeType6">"⑥一张保单一个保险年度内，同一标的多次出险，或者同一第三者多次出险案件；"</string>
+    <string name="safeType7">"⑦同一报案电话在一个自然年内出现三次及以上且在不同案件；"</string>
+    <string name="safeType8">"⑧事故车辆同厂修理案件（相同修理厂）；"</string>
+    <string name="safeType9">"⑨停放被撞案件且投保“无法找到第三方特约损失险"</string>
+</resources>

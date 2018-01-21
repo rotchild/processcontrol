@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.andview.refreshview.XRefreshView
+        xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/xrv_dds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xrefreshview:autoRefresh="true"
+        >
+    <ListView
+        android:id="@+id/lv_dds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="1px"
+        />
+    </com.andview.refreshview.XRefreshView>
+    <RelativeLayout
+        android:id="@+id/dds_noReportRL"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/no_report"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

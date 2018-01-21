@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orangered">#EB645E</color>
+    <color name="lightgray">#E9E9E9</color>
+    <color name="selecttext_red">#eb655e</color>
+    <color name="defaulttext_black">#000000</color>
+    <color name="gray_white">#ffcccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="blueed">#04a9ff</color>
+    <color name="yellowed">#ffa200</color>
+    <color name="maintext">#333333</color>
+    <color name="noticetext">#eb655e</color>
+    <color name="typegreen">#00b383</color>
+    <color name="typered">#eb655e</color>
+    <color name="tel_blue">#1597e9</color>
+    <color name="check_yellow">#ff9c00</color>
+    <color name="check_green">#40c9c7</color>
+    <color name="check_red">#eb655e</color>
+    <color name="divider_color">#e0e0e0</color>
+    <color name="telpannel">#1bbc9b</color>
+
+
+
+
+</resources>
